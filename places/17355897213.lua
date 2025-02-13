@@ -179,11 +179,7 @@ main.Other:AddButton({
     DoubleClick = true,
     Func = function()
         events.PlayAgain:FireServer()
-        library:Notify("[xHub] Teleporting in 5")
-        for i = 1, 4 do
-            task.wait(1)
-            library:Notify(5 - i)
-        end
+        library:Notify("[xHub] Teleporting in 5 seconds")
     end
 })
 
